@@ -17,16 +17,13 @@ function Navbar() {
                 <a href="#">TIENDA</a>
               </li>
               <li>
-                <a href="#">HOLA</a>
-              </li>
-              <li>
                 <a href="#">OFERTAS DE LA SEMANA</a>
               </li>
               <li>
-                <a href="#">CONTACTO</a>
+                <a href="#">PRODUCTOS</a>
               </li>
               <li>
-                <a href="#">PRODUCTOS</a>
+                <a href="#">CONTACTO</a>
               </li>
               <li>
                 <a href="#">EQUIPO</a>
