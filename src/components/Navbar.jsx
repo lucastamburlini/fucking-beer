@@ -17,6 +17,9 @@ function Navbar() {
                 <a href="#">TIENDA</a>
               </li>
               <li>
+                <a href="#">HOLA</a>
+              </li>
+              <li>
                 <a href="#">OFERTAS DE LA SEMANA</a>
               </li>
               <li>
