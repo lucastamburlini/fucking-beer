@@ -1,0 +1,69 @@
+.dataContainer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+
+  img {
+    display: none;
+  }
+
+  .dataName {
+    width: 100%;
+  }
+
+  .dataAmountContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+    margin: 0 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ff5c4b;
+      cursor: pointer;
+    }
+  }
+  .dataPrice {
+    min-width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 680px) {
+  .dataContainer {
+    width: 100%;
+
+    img {
+      height: 80px;
+      display: flex;
+      margin: 0 30px;
+    }
+    .dataName {
+      width: 250px;
+    }
+  }
+  .dataPrice {
+    margin: 30px;
+  }
+}

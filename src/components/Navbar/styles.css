@@ -1,0 +1,150 @@
+.navbar {
+  width: 100vw;
+  height: autox;
+  display: flex;
+  position:fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.navLogo > img {
+  height: 70px;
+  padding-left: 50px;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navLinks a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 0 15px;
+  transition: all 0.5s ease;
+}
+
+.navLinks a:hover {
+  color: #ff5c4b;
+}
+
+/* .navLinks a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ff5c4b;
+  transition: all 0.45s;
+}
+
+.navLinks a:hover::before {
+  width: 100%;
+} */
+
+.icons {
+  display: flex;
+  padding-right: 50px;
+}
+
+.icons ul {
+  display: flex;
+  align-items: center;
+}
+
+.icons a {
+  color: white;
+  display: flex;
+  padding: 10px;
+  margin: 6px;
+  transition: all 0.5s ease;
+}
+
+.icons a:hover {
+  color: #ff5c4b;
+}
+
+.mobileMenuIcon {
+  display: none;
+}
+
+.iconsMobile {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navLogo {
+    display: none;
+  }
+
+  .navLinks a {
+    display: none;
+  }
+
+  .navLinksMobile {
+    height: auto;
+    background-color: grey;
+    position: absolute;
+    left: 0;
+    top: 56px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+
+  .navLinksMobile a {
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .navLinksMobile a:hover {
+    color: #ff5c4b;
+  }
+  .icons {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+  }
+
+  .iconsMobile {
+    display: flex;
+  }
+
+  .iconsMobile ul {
+    display: flex;
+    align-items: center;
+  }
+
+  .iconsMobile a {
+    color: white;
+    display: flex;
+    padding: 10px;
+    margin: 6px;
+    transition: all 0.5s ease;
+  }
+
+  .iconsMobile a:hover {
+    color: #ff5c4b;
+  }
+  .mobileMenuIcon {
+    padding-right: 20px;
+    display: flex;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
