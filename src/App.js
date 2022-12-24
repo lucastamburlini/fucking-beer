@@ -1,10 +1,15 @@
-import React from "react"
-import Navbar from "./components/Navbar"
+import "./App.css"
+import { CartProvider } from "./context/CartProvider";
+import Layout from "./Layout/Layout";
 
 function App() {
   return (
-    <Navbar />
-  )
+    <div className="container">
+      <CartProvider>
+        <Layout />
+      </CartProvider>
+    </div>
+  );
 }
 
 export default App;

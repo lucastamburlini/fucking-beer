@@ -1,0 +1,42 @@
+.cartContainer {
+  display: flex;
+  justify-content: end;
+
+  .cart {
+    position: absolute;
+    min-width: 200px;
+    background-color: black;
+    color: white;
+    z-index: 2;
+    margin: 20px;
+
+    h2 {
+      text-align: center;
+    }
+
+    .cartEmpty {
+      text-align: center;
+    }
+
+    .total {
+      text-align: center;
+    }
+  }
+}
+
+.cartEmpty {
+  padding: 15px 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+}
