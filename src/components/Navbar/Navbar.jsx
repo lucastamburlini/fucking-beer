@@ -1,14 +1,15 @@
 import "./styles.css";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import CartFront from "../CartFront/CartFront";
 import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
+import {HashLink as Link} from "react-router-hash-link"
 
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navLogo">
@@ -18,23 +19,17 @@ const Navbar = () => {
         className={isMobile ? "navLinksMobile" : "navLinks"}
         onClick={() => setIsMobile(false)}
       >
-        <Link to="/" className="home">
-          INICIO
-        </Link>
-        <Link to="/" className="products">
-          PRODUCTOS
-        </Link>
-        <Link to="/" className="about">
-          SOBRE NOSOTROS
-        </Link>
-        <Link to="/" className="contact">
-          CONTACTO
-        </Link>
+        <Link to="/#home" offset={-70} smooth>INICIO</Link>
+        <Link to="/#products" smooth>PRODUCTOS</Link>
+        <Link to="/#about" smooth>SOBRE NOSOTROS</Link>
+        <Link to="/#contact" smooth>CONTACTO</Link>
       </ul>
-      <div className={isMobile ? "iconsMobile" : "icons"}
-        onClick={() => setIsMobile(false)}>
+      <div
+        className={isMobile ? "iconsMobile" : "icons"}
+        onClick={() => setIsMobile(false)}
+      >
         <ul>
-          <Link to="/ ">
+          <Link  to="/ ">
             <SearchIcon />
           </Link>
           <Link to="/ ">
