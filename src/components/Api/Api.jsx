@@ -1,19 +1,40 @@
 import { Button } from "@mui/material";
-import React, { useContext } from "react";
+import axios from "axios";
+import { useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartProvider";
-import { ProductsData } from "../../data/ProductsData";
 import styles from "./styles.module.scss";
 
-const Products = () => {
+export const BASE_URL = "http://localhost:8000";
+
+const Api = () => {
+  const [refetch, setRefetch] = useState("false");
+  const [error, setError] = useState("");
+  const [data, setData] = useState([]);
   const { addItemToCart } = useContext(CartContext);
+  const refetchData = () => setRefetch(!refetch);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios({
+          method: "get",
+          url: `${BASE_URL}/data/`,
+        });
+        setData(res.data);
+        refetchData();
+      } catch (error) {
+        console.log(error);
+        setError("Ocurrió un error al solicitar información");
+      }
+    };
+    fetchData();
+  }, [refetch]);
+
   return (
-    <div id="products">
-      <div className={styles.container}>
-        <div className={styles.containerTittle}>
-          <h1>Nuestros productos</h1>
-        </div>
+    <>
+      <div id="products">
         <div className={styles.containerProducts}>
-          {ProductsData.map((product, i) => (
+          {data.map((product, i) => (
             <div key={i} className={styles.products}>
               <img src={product.img} alt={product.name} />
               <div>
@@ -33,8 +54,8 @@ const Products = () => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Products;
+export default Api;

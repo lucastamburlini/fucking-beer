@@ -1,0 +1,132 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Brahma 473 ml.",
+      "price": 165.0,
+      "img": "./images/brahma473lata.png",
+      "category": "lata",
+      "amount": 0
+    },
+    {
+        "id": 2,
+        "name": "Corona 269 ml.",
+        "price": 162.00,
+        "img": "./images/corona269lata.png",
+        "category": "lata",
+        "amount": 0
+    },   
+    {
+        "id" : 3,
+        "name": "Amstel Lager Suave 473 ml.",
+        "price": 169.00,
+        "img": "./images/amstelLagerSuave473lata.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 4,
+        "name": "Imperial Golden 473 ml.",
+        "price": 254.00,
+        "img": "./images/imperialGolden473lata.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 5,
+        "name": "Stella Artois 473 ml.",
+        "price": 332.00,
+        "img": "./images/stellaArtois473lata.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 6,
+        "name": "Heineken 710 ml.",
+        "price": 490.00,
+        "img": "./images/heineken710lata.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 7,
+        "name": "Rubia Stella Artois 269 ml.",
+        "price": 197.00,
+        "img": "./images/rubiaStellaArtois269lata.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 8,
+        "name": "Andes Rubia 473 ml.",
+        "price": 270.00,
+        "img": "./images/andesRubia473lata.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 9,
+        "name": "Roja Andes Origen 269 ml.",
+        "price": 170.00,
+        "img": "./images/rojaAndesOrigen269.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 10,
+        "name": "Starberg Lager 500 ml.",
+        "price": 305.00,
+        "img": "./images/starbergLager500.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 11,
+        "name": "Temple Scotish 473 ml.",
+        "price": 410.00,
+        "img": "./images/templeScotish473.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 12,
+        "name": "Miller 473 ml.",
+        "price": 287.00,
+        "img": "./images/miller473.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 13,
+        "name": "Ortuzar Session Ipa 473 ml.",
+        "price": 390.00,
+        "img": "./images/ortuzarSessionIpa473.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 14,
+        "name": "Temple Wolf Ipa 473 ml.",
+        "price": 410.00,
+        "img": "./images/templeWolfIpa473.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 15,
+        "name": "Budweiser 410 ml.",
+        "price": 237.00,
+        "img": "./images/budweiser410.png",
+        "category": "lata",
+        "amount": 0
+    },
+    {
+        "id": 16,
+        "name": "Patagonia Amber Lager 410 ml.",
+        "price": 378.00,
+        "img": "./images/patagoniaAmberLager410.png",
+        "category": "lata",
+        "amount": 0
+    }
+  ]
+}
