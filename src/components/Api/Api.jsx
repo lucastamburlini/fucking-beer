@@ -11,7 +11,6 @@ const Api = () => {
   const [error, setError] = useState("");
   const [data, setData] = useState([]);
   const { addItemToCart } = useContext(CartContext);
-  const refetchData = () => setRefetch(!refetch);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,7 +20,6 @@ const Api = () => {
           url: `${BASE_URL}/data/`,
         });
         setData(res.data);
-        refetchData();
       } catch (error) {
         console.log(error);
         setError("Ocurrió un error al solicitar información");
