@@ -1,12 +1,42 @@
-.containerBanner {
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.container {
   height: 100vh;
   width: 100%;
-  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 22px;
 
-  h1 {
-    height: px;
+  .containerBanner {
+    background-image: linear-gradient(0deg,
+    rgba(0,0,0,.1),
+    rgba(0,0,0,.2))
+    ,url(../../../public/images/fuckingBeerBanner.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+
+    h1 {
+      padding: 20px;
+    }
+    p {
+      padding: 0 40px 20px 40px;
+
+    }
   }
+
+  img {
+    display: none;
+  }
+
+  
 }

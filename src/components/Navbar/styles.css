@@ -2,10 +2,10 @@
   width: 100%;
   height: autox;
   display: flex;
-  position:fixed;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
   color: white;
   z-index: 2;
 }
@@ -91,7 +91,7 @@
 
   .navLinksMobile {
     height: auto;
-    background-color: grey;
+    background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
     left: 0;
     top: 56px;
