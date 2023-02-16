@@ -2,8 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  
+  .cart {
+    height: 100%;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 40px;
 }
 
 .hr {
@@ -11,16 +22,6 @@
   border-bottom: 1px solid #e5e5e5;
   margin: 0 0 15px 0;
 }
-.cart {
-  height: auto;
-  min-width: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 5px;
-  padding: 0 40px;
 
   .cartTittle {
     display: flex;
@@ -55,9 +56,19 @@
 
 @media (min-width: 320px) {
   .cartContainer {
-    height: auto;
+    width: 90%;
+    .cart {
+      min-width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .cartContainer {
     width: 100%;
-    padding-top: 120px;
-    margin: 0;
+
+    .cart {
+      min-width: 768px;
+    }
   }
 }
